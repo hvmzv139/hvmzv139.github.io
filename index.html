@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamza — Data Science &amp; AI</title>
+<meta name="description" content="Hamza — Data Science &amp; AI, master's graduate, building and learning in public.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="wrap">
+
+  <header class="header">
+    <h1>Hamza</h1>
+    <p class="tagline">Data Science &amp; AI.</p>
+
+    <nav class="socials">
+      <a href="https://github.com/your-handle" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+        <img src="assets/icons/github.svg" alt="" width="20" height="20">
+      </a>
+      <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn">
+        <img src="assets/icons/linkedin.svg" alt="" width="20" height="20">
+      </a>
+      <a href="https://x.com/your-handle" target="_blank" rel="noopener" class="icon-link" aria-label="X">
+        <img src="assets/icons/x.svg" alt="" width="20" height="20">
+      </a>
+      <a href="https://kaggle.com/your-handle" target="_blank" rel="noopener" class="icon-link" aria-label="Kaggle">
+        <img src="assets/icons/kaggle.svg" alt="" width="20" height="20">
+      </a>
+      <a href="https://medium.com/@your-handle" target="_blank" rel="noopener" class="icon-link" aria-label="Medium">
+        <img src="assets/icons/medium.svg" alt="" width="20" height="20">
+      </a>
+    </nav>
+  </header>
+
+  <section class="bio">
+    <p class="intro-line">Master's graduate in Data Science &amp; AI, doer of things.</p>
+
+    <p>
+      Studied <strong>Data Science &amp; AI</strong>, currently finishing up my studies.
+      Interested in <strong>your area of focus — e.g. NLP, computer vision, MLOps</strong>,
+      and learning by building things and documenting the process along the way.
+    </p>
+
+    <p class="email-row">
+      <span id="email">hi@yourdomain.com</span>
+      <button id="copyBtn" onclick="copyEmail()">Copy Email</button>
+    </p>
+  </section>
+
+  <section class="built">
+    <h2>Built</h2>
+
+    <div class="project">
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Master's thesis project ↗</a>
+        <span class="stat">placeholder</span>
+      </div>
+      <p class="project-desc">short description of your thesis / capstone project</p>
+    </div>
+
+    <div class="project">
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Kaggle competition or notebook ↗</a>
+      </div>
+      <p class="project-desc">short description — dataset, model, result</p>
+    </div>
+
+    <div class="project">
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Personal ML/AI project ↗</a>
+      </div>
+      <p class="project-desc">short description of what it does and why you built it</p>
+    </div>
+
+    <h3 class="subhead">Random things I've built</h3>
+    <ul class="loose-list">
+      <li><a href="#" target="_blank" rel="noopener">A side project or experiment worth mentioning</a> ↗</li>
+      <li><a href="#" target="_blank" rel="noopener">A write-up or blog post on Medium</a> ↗</li>
+      <li><a href="#" target="_blank" rel="noopener">Something else you're proud of</a> ↗</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <nav class="footer-nav">
+      <a href="index.html">About</a>
+      <a href="writing.html">Writing</a>
+      <a href="images.html">Images</a>
+      <a href="roadmap.html">Roadmap</a>
+    </nav>
+  </footer>
+
+</main>
+
+<script>
+function copyEmail() {
+  const email = document.getElementById('email').innerText;
+  navigator.clipboard.writeText(email).then(() => {
+    const btn = document.getElementById('copyBtn');
+    const original = btn.innerText;
+    btn.innerText = 'Copied!';
+    setTimeout(() => { btn.innerText = original; }, 1500);
+  });
+}
+</script>
+
+</body>
+</html>
