@@ -30,10 +30,10 @@
     <a href="https://www.linkedin.com/in/hamza-houbbadi" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn">
       <img src="assets/icons/linkedin.svg" alt="" width="20" height="20">
     </a>
-    <a href="https://x.com/your-handle" target="_blank" rel="noopener" class="icon-link" aria-label="X">
+    <a href="https://x.com/hvmzvvi" target="_blank" rel="noopener" class="icon-link" aria-label="X">
       <img src="assets/icons/x.svg" alt="" width="20" height="20">
     </a>
-    <a href="https://kaggle.com/your-handle" target="_blank" rel="noopener" class="icon-link" aria-label="Kaggle">
+    <a href="https://www.kaggle.com/hamzahoubbadi" target="_blank" rel="noopener" class="icon-link" aria-label="Kaggle">
       <img src="assets/icons/kaggle.png" alt="" width="20" height="20">
     </a>
     <a href="https://medium.com/@your-handle" target="_blank" rel="noopener" class="icon-link" aria-label="Medium">
@@ -50,10 +50,25 @@
       learning by building things and documenting the process along the way.
     </p>
 
-    <p class="email-row">
-      <span id="email">hamzahoubbadi982@gmail.com</span>
-      <button id="copyBtn" onclick="copyEmail()">Copy Email</button>
-    </p>
+ <p class="email-row">
+  <span id="email">hamzahoubbadi982@gmail.com</span>
+  <button id="copyBtn" onclick="copyEmail()" class="pill-btn">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="9" y="9" width="13" height="13" rx="2"/>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+    </svg>
+    <span id="copyBtnText">Copy Email</span>
+  </button>
+  <a href="https://cal.com/hamza-houbbadi/30min" target="_blank" rel="noopener" class="pill-btn">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="3" y="4" width="18" height="18" rx="2"/>
+      <line x1="16" y1="2" x2="16" y2="6"/>
+      <line x1="8" y1="2" x2="8" y2="6"/>
+      <line x1="3" y1="10" x2="21" y2="10"/>
+    </svg>
+    Meet me ! 
+  </a>
+</p>
   </section>
 
   <section class="built">
@@ -104,10 +119,10 @@
 function copyEmail() {
   const email = document.getElementById('email').innerText;
   navigator.clipboard.writeText(email).then(() => {
-    const btn = document.getElementById('copyBtn');
-    const original = btn.innerText;
-    btn.innerText = 'Copied!';
-    setTimeout(() => { btn.innerText = original; }, 1500);
+    const btnText = document.getElementById('copyBtnText');
+    const original = btnText.innerText;
+    btnText.innerText = 'Copied!';
+    setTimeout(() => { btnText.innerText = original; }, 1500);
   });
 }
 </script>
