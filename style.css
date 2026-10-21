@@ -38,7 +38,7 @@ body {
 
 /* Header */
 .header h1 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 600;
   margin: 0 0 4px;
 }
@@ -400,4 +400,34 @@ button:focus-visible {
   font-size: 0.8rem;
   white-space: nowrap;
   margin-top: 3px;
+}
+.icon-link {
+  position: relative;
+}
+
+.icon-link::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  padding: 4px 10px;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 10;
+}
+
+.icon-link:hover::after,
+.icon-link:focus-visible::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }

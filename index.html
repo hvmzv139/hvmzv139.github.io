@@ -1,254 +1,438 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hamza Houbbadi</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamza Houbbadi</title>
 
-<link rel="icon" type="image/png" href="assets/icons/favicon.ico">
-<meta name="description" content="Hamza — Data Science &amp; AI, master's graduate, building and learning in public.">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<video id="seaVideo" class="bg-video" muted loop playsinline>
-  <source src="assets/video/sea2.mp4" type="video/mp4">
-</video>
-<audio id="seaAudio" loop>
-  <source src="assets/audio/audio1.mp3" type="audio/mpeg">
-</audio>
-<main class="wrap">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.ico" />
+    <meta
+      name="description"
+      content="Hamza — Data Science &amp; AI, master's graduate, building and learning in public."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video id="seaVideo" class="bg-video" muted loop playsinline>
+      <source src="assets/video/sea2.mp4" type="video/mp4" />
+    </video>
+    <audio id="seaAudio" loop>
+      <source src="assets/audio/audio1.mp3" type="audio/mpeg" />
+    </audio>
+    <main class="wrap">
+      <header class="header">
+        <div class="header-top">
+          <div class="header-text">
+            <h1>Hamza Houbbadi</h1>
+            <p class="tagline">Data Science &amp; AI.</p>
+          </div>
+          <img
+            src="assets/images/favicon.jpeg"
+            alt="Hamza Houbbadi"
+            class="profile-pic"
+          />
+        </div>
 
-<header class="header">
-  <div class="header-top">
-    <div class="header-text">
-      <h1>Hamza Houbbadi</h1>
-      <p class="tagline">Data Science &amp; AI.</p>
-    </div>
-    <img src="assets/images/favicon.jpeg" alt="Hamza Houbbadi" class="profile-pic">
-  </div>
+        <nav class="socials">
+          <a
+            href="https://github.com/hvmzv139"
+            target="_blank"
+            rel="noopener"
+            class="icon-link"
+            aria-label="GitHub"
+            data-tip="GitHub"
+          >
+            <img src="assets/icons/github.svg" alt="" width="20" height="20" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/hamza-houbbadi"
+            target="_blank"
+            rel="noopener"
+            class="icon-link"
+            aria-label="LinkedIn"
+            data-tip="LinkedIn"
+          >
+            <img
+              src="assets/icons/linkedin.svg"
+              alt=""
+              width="20"
+              height="20"
+            />
+          </a>
+          <a
+            href="https://x.com/hvmzvvi"
+            target="_blank"
+            rel="noopener"
+            class="icon-link"
+            aria-label="X"
+            data-tip="X"
+          >
+            <img src="assets/icons/x.svg" alt="" width="20" height="20" />
+          </a>
+          <a
+            href="https://www.kaggle.com/hamzahoubbadi"
+            target="_blank"
+            rel="noopener"
+            class="icon-link"
+            aria-label="Kaggle"
+            data-tip="Kaggle"
+          >
+            <img src="assets/icons/kaggle.png" alt="" width="20" height="20" />
+          </a>
+          <a
+            href="https://medium.com/@your-handle"
+            target="_blank"
+            rel="noopener"
+            class="icon-link"
+            aria-label="Medium"
+            data-tip="Medium"
+          >
+            <img src="assets/icons/medium.png" alt="" width="20" height="20" />
+          </a>
+        </nav>
+      </header>
 
- 
+      <section class="bio">
+        <p class="intro-line">
+          Master's graduate in Data Science &amp; AI, building and learning.
+        </p>
 
-  <nav class="socials">
-    <a href="https://github.com/hvmzv139" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
-      <img src="assets/icons/github.svg" alt="" width="20" height="20">
-    </a>
-    <a href="https://www.linkedin.com/in/hamza-houbbadi" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn">
-      <img src="assets/icons/linkedin.svg" alt="" width="20" height="20">
-    </a>
-    <a href="https://x.com/hvmzvvi" target="_blank" rel="noopener" class="icon-link" aria-label="X">
-      <img src="assets/icons/x.svg" alt="" width="20" height="20">
-    </a>
-    <a href="https://www.kaggle.com/hamzahoubbadi" target="_blank" rel="noopener" class="icon-link" aria-label="Kaggle">
-      <img src="assets/icons/kaggle.png" alt="" width="20" height="20">
-    </a>
-    <a href="https://medium.com/@your-handle" target="_blank" rel="noopener" class="icon-link" aria-label="Medium">
-      <img src="assets/icons/medium.png" alt="" width="20" height="20">
-    </a>
-  </nav>
-</header>
+        <p>
+          Studied <strong>Data Science &amp; AI</strong>, currently finishing up
+          my studies. learning by building things and documenting the process
+          along the way.
+        </p>
 
-  <section class="bio">
-    <p class="intro-line">Master's graduate in Data Science &amp; AI, building and learning.</p>
+        <p class="email-row">
+          <span id="email">hamzahoubbadi982@gmail.com</span>
+          <button id="copyBtn" onclick="copyEmail()" class="pill-btn">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="9" y="9" width="13" height="13" rx="2" />
+              <path
+                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+              />
+            </svg>
+            <span id="copyBtnText">Copy Email</span>
+          </button>
+          <a
+            href="https://cal.com/hamza-houbbadi/30min"
+            target="_blank"
+            rel="noopener"
+            class="pill-btn"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            Meet me !
+          </a>
+          
+        </p>
+      </section>
 
-    <p>
-      Studied <strong>Data Science &amp; AI</strong>, currently finishing up my studies.
-      learning by building things and documenting the process along the way.
-    </p>
+      <!-- Cursus / Education-->
+      <section class="cursus">
+        <h2>Cursus</h2>
 
- <p class="email-row">
-  <span id="email">hamzahoubbadi982@gmail.com</span>
-  <button id="copyBtn" onclick="copyEmail()" class="pill-btn">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="9" y="9" width="13" height="13" rx="2"/>
-      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-    </svg>
-    <span id="copyBtnText">Copy Email</span>
-  </button>
-  <a href="https://cal.com/hamza-houbbadi/30min" target="_blank" rel="noopener" class="pill-btn">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="3" y="4" width="18" height="18" rx="2"/>
-      <line x1="16" y1="2" x2="16" y2="6"/>
-      <line x1="8" y1="2" x2="8" y2="6"/>
-      <line x1="3" y1="10" x2="21" y2="10"/>
-    </svg>
-    Meet me ! 
-  </a>
-</p>
-  </section>
+        <div class="edu-item">
+          <a href="https://" target="_blank" rel="noopener">
+            <img
+              src="assets/images/fp.jpg"
+              alt="Université Côte d'Azur"
+              class="edu-logo"
+            />
+          </a>
+          <div class="edu-info">
+            <a
+              href="https://fsabm.usms.ac.ma/"
+              target="_blank"
+              rel="noopener"
+              class="edu-school"
+              >Faculté des Sciences Appliquées de Béni Mellal</a
+            >
+            <p class="edu-degree">
+              Master’s Degree in Data Science and Information Systems Security
+            </p>
+          </div>
+          <span class="edu-dates">2023 - 2026</span>
+        </div>
 
-  <!-- Cursus / Education-->
-<section class="cursus">
-  <h2>Cursus</h2>
+        <div class="edu-item">
+          <a href="https://emsi.ma" target="_blank" rel="noopener">
+            <img src="assets/images/cadi.jpg" alt="EMSI" class="edu-logo" />
+          </a>
+          <div class="edu-info">
+            <a
+              href="https://ens.uca.ma/"
+              target="_blank"
+              rel="noopener"
+              class="edu-school"
+              >École Normale Supérieure de Marrakech</a
+            >
+            <p class="edu-degree">
+              University Diploma of Technology in Computer Engineering
+            </p>
+          </div>
+          <span class="edu-dates">2021 - 2023</span>
+        </div>
+      </section>
 
-  <div class="edu-item">
-    <a href="https://" target="_blank" rel="noopener">
-      <img src="assets/images/fp.jpg" alt="Université Côte d'Azur" class="edu-logo">
-    </a>
-    <div class="edu-info">
-      <a href="https://fsabm.usms.ac.ma/" target="_blank" rel="noopener" class="edu-school">Faculté des Sciences Appliquées de Béni Mellal</a>
-      <p class="edu-degree">Master’s Degree in Data Science and Information Systems Security</p>
-    </div>
-    <span class="edu-dates">2023 - 2026</span>
-  </div>
+      <!-- Experiences-->
 
-  <div class="edu-item">
-    <a href="https://emsi.ma" target="_blank" rel="noopener">
-      <img src="assets/images/cadi.jpg" alt="EMSI" class="edu-logo">
-    </a>
-    <div class="edu-info">
-      <a href="https://ens.uca.ma/" target="_blank" rel="noopener" class="edu-school">École Normale Supérieure de Marrakech</a>
-      <p class="edu-degree">University Diploma of Technology in Computer Engineering</p>
-    </div>
-    <span class="edu-dates">2021 - 2023</span>
-  </div>
+      <section class="cursus">
+        <h2>Experience</h2>
 
-</section>
+        <div class="edu-item">
+          <a href="https://corp.intellcap.fr/" target="_blank" rel="noopener">
+            <img
+              src="assets/images/Intellcap.jpg"
+              alt="INTELLCAP"
+              class="edu-logo"
+            />
+          </a>
+          <div class="edu-info">
+            <a
+              href="https://corp.intellcap.fr/"
+              target="_blank"
+              rel="noopener"
+              class="edu-school"
+              >Data Scientist &amp; AI Engineer (Internship)</a
+            >
+            <p class="edu-degree">Intellcap - Tech Impact</p>
+            <p class="description">
+              Built an end-to-end AI sports analytics platform (FastAPI, React,
+              PostgreSQL, XGBoost/LightGBM, SHAP, MLflow, Airflow) predicting
+              athlete performance, fatigue and injury risk from wearable sensor
+              data, with JWT/RBAC access control and model-driven coaching
+              recommendations.
+            </p>
+          </div>
+          <span class="edu-dates">Apr 2026 - Present</span>
+        </div>
 
-<!-- Experiences-->
+        <div class="edu-item">
+          <a href="https://orchidisland.immo/" target="_blank" rel="noopener">
+            <img
+              src="assets/images/orchid-island-logo.svg"
+              alt="Orchid Island"
+              class="edu-logo"
+            />
+          </a>
+          <div class="edu-info">
+            <a
+              href="https://orchidisland.immo/"
+              target="_blank"
+              rel="noopener"
+              class="edu-school"
+              >Data Engineer (Internship)</a
+            >
+            <p class="edu-degree">Orchid Island Real Estate</p>
+            <p class="description">
+              Built an automated web scraping pipeline (Scrapy, Flask,
+              Playwright) to collect and structure real estate listings from
+              Mubawab.ma, laying the data foundation for a downstream
+              price-prediction model.
+            </p>
+          </div>
+          <span class="edu-dates">Mar 2026 - Apr2026</span>
+        </div>
+      </section>
+      <!-- What i have built-->
+      <section class="built">
+        <h2>Built</h2>
 
-<section class="cursus">
-  <h2>Experience</h2>
+        <div class="project">
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener"
+              >Master's thesis project ↗</a
+            >
+            <span class="stat">placeholder</span>
+          </div>
+          <p class="project-desc">
+            Soon <!-- short description of your thesis / capstone project -->
+          </p>
+        </div>
 
-  <div class="edu-item">
-    <a href="https://corp.intellcap.fr/" target="_blank" rel="noopener">
-      <img src="assets/images/Intellcap.jpg" alt="INTELLCAP" class="edu-logo">
-    </a>
-    <div class="edu-info">
-      <a href="https://corp.intellcap.fr/" target="_blank" rel="noopener" class="edu-school">Data Scientist &amp; AI Engineer (Internship)</a>
-      <p class="edu-degree">Intellcap - Tech Impact</p>
-    </div>
-    <span class="edu-dates">2026 - Present</span>
-  </div>
+        <div class="project">
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener"
+              >Kaggle competition ↗</a
+            >
+          </div>
+          <p class="project-desc">
+            Soon <!-- short description — dataset, model, result -->
+          </p>
+        </div>
 
-  <div class="edu-item">
-    <a href="https://orchidisland.immo/" target="_blank" rel="noopener">
-      <img src="assets/images/orchid-island-logo.svg" alt="Orchid Island" class="edu-logo">
-    </a>
-    <div class="edu-info">
-      <a href="https://orchidisland.immo/" target="_blank" rel="noopener" class="edu-school">Data Engineer (Internship)</a>
-      <p class="edu-degree">Orchid Island Real Estate</p>
-      <p class="description">
-        Built an automated web scraping pipeline (Scrapy, Flask, Playwright) to collect and structure real estate listings from Mubawab.ma, laying the data foundation for a downstream price-prediction model.
-      </p>
-      
-    </div>
-    <span class="edu-dates">Mar 2026 - Apr2026</span>
-  </div>
+        <div class="project">
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener"
+              >Personal ML/AI project ↗</a
+            >
+          </div>
+          <p class="project-desc">
+            Soon <!-- short description of what it does and why you built it -->
+          </p>
+        </div>
 
+        <h3 class="subhead"> Random things I've built </h3>
+        <ul class="loose-list">
+          <li>
+            <a href="#" target="_blank" rel="noopener"
+              > Soon <!-- A side project or experiment worth mentioning --></a
+            >
+            ↗
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener"
+              > Soon <!-- A write-up or blog post on Medium --></a
+            >
+            ↗
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener"
+              > Soon <!-- Something else you're proud of --></a
+            >
+            ↗
+          </li>
+        </ul>
+      </section>
 
-</section>
-<!-- What i have built-->
-  <section class="built">
-    <h2>Built</h2>
+      <footer class="footer">
+        <div class="footer-bar">
+          <nav class="footer-nav">
+            <a href="index.html">About</a>
+            <a href="writing.html">Writing</a>
+            <a href="images.html">Images</a>
+            <a href="roadmap.html">Roadmap</a>
+          </nav>
 
-    <div class="project">
-      <div class="project-links">
-        <a href="#" target="_blank" rel="noopener">Master's thesis project ↗</a>
-        <span class="stat">placeholder</span>
-      </div>
-      <p class="project-desc">short description of your thesis / capstone project</p>
-    </div>
+          <div class="theme-switcher">
+            <button
+              type="button"
+              class="theme-btn active"
+              data-theme="light"
+              aria-label="Light mode"
+            >
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </svg>
+            </button>
 
-    <div class="project">
-      <div class="project-links">
-        <a href="#" target="_blank" rel="noopener">Kaggle competition or notebook ↗</a>
-      </div>
-      <p class="project-desc">short description — dataset, model, result</p>
-    </div>
+            <button
+              type="button"
+              class="theme-btn"
+              data-theme="dark"
+              aria-label="Dark mode"
+            >
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </button>
 
-    <div class="project">
-      <div class="project-links">
-        <a href="#" target="_blank" rel="noopener">Personal ML/AI project ↗</a>
-      </div>
-      <p class="project-desc">short description of what it does and why you built it</p>
-    </div>
+            <button
+              type="button"
+              class="theme-btn"
+              data-theme="sea"
+              aria-label="Sea mode"
+            >
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </main>
 
-    <h3 class="subhead">Random things I've built</h3>
-    <ul class="loose-list">
-      <li><a href="#" target="_blank" rel="noopener">A side project or experiment worth mentioning</a> ↗</li>
-      <li><a href="#" target="_blank" rel="noopener">A write-up or blog post on Medium</a> ↗</li>
-      <li><a href="#" target="_blank" rel="noopener">Something else you're proud of</a> ↗</li>
-    </ul>
-  </section>
+    <script>
+      function copyEmail() {
+        const email = document.getElementById("email").innerText;
+        navigator.clipboard.writeText(email).then(() => {
+          const btnText = document.getElementById("copyBtnText");
+          const original = btnText.innerText;
+          btnText.innerText = "Copied!";
+          setTimeout(() => {
+            btnText.innerText = original;
+          }, 1500);
+        });
+      }
 
- <footer class="footer">
-  <div class="footer-bar">
-    <nav class="footer-nav">
-      <a href="index.html">About</a>
-      <a href="writing.html">Writing</a>
-      <a href="images.html">Images</a>
-      <a href="roadmap.html">Roadmap</a>
-    </nav>
+      const themeButtons = document.querySelectorAll(".theme-btn");
+      const seaVideo = document.getElementById("seaVideo");
+      const seaAudio = document.getElementById("seaAudio");
 
- <div class="theme-switcher">
-  <button type="button" class="theme-btn active" data-theme="light" aria-label="Light mode">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <circle cx="12" cy="12" r="5"/>
-      <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-      <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-    </svg>
-  </button>
+      function setTheme(theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
 
-  <button type="button" class="theme-btn" data-theme="dark" aria-label="Dark mode">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-    </svg>
-  </button>
+        themeButtons.forEach((btn) => {
+          btn.classList.toggle("active", btn.dataset.theme === theme);
+        });
 
-  <button type="button" class="theme-btn" data-theme="sea" aria-label="Sea mode">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="2" y="3" width="20" height="14" rx="2"/>
-      <line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-    </svg>
-  </button>
-</div>
-  </div>
-</footer>
-</main>
+        if (theme === "sea") {
+          seaVideo.play();
+          seaAudio.volume = 0.4;
+          seaAudio.play();
+        } else {
+          seaVideo.pause();
+          seaAudio.pause();
+        }
+      }
 
-<script>
-function copyEmail() {
-  const email = document.getElementById('email').innerText;
-  navigator.clipboard.writeText(email).then(() => {
-    const btnText = document.getElementById('copyBtnText');
-    const original = btnText.innerText;
-    btnText.innerText = 'Copied!';
-    setTimeout(() => { btnText.innerText = original; }, 1500);
-  });
-}
-  
-const themeButtons = document.querySelectorAll('.theme-btn');
-const seaVideo = document.getElementById('seaVideo');
-const seaAudio = document.getElementById('seaAudio');
+      themeButtons.forEach((btn) => {
+        btn.addEventListener("click", () => setTheme(btn.dataset.theme));
+      });
 
-function setTheme(theme) {
-  document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
-
-  themeButtons.forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.theme === theme);
-  });
-
-  if (theme === 'sea') {
-    seaVideo.play();
-    seaAudio.volume = 0.4;
-    seaAudio.play();
-  } else {
-    seaVideo.pause();
-    seaAudio.pause();
-  }
-}
-
-themeButtons.forEach(btn => {
-  btn.addEventListener('click', () => setTheme(btn.dataset.theme));
-});
-
-const savedTheme = localStorage.getItem('theme') || 'light';
-setTheme(savedTheme);
-</script>
-
-</body>
+      const savedTheme = localStorage.getItem("theme") || "light";
+      setTheme(savedTheme);
+    </script>
+  </body>
 </html>
